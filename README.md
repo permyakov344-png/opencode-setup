@@ -85,8 +85,8 @@ verify.ps1  / verify.sh         ← проверка, только чтение
 ```
 
 Куда ставится: `~/.config/opencode` — глобальная конфигурация, действует во всех
-проектах. На Windows это `%USERPROFILE%\.config\opencode`.
-Если задан `XDG_CONFIG_HOME`, OpenCode берёт путь оттуда.
+проектах. На Windows это `%USERPROFILE%\.config\opencode`. Путь одинаковый на
+macOS, Linux и Windows.
 
 ---
 
