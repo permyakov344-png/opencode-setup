@@ -1,0 +1,13 @@
+# Скрипты для macOS/Linux — только LF, иначе на Mac будет «bad interpreter»
+*.sh   text eol=lf
+
+# Windows-скрипты — только CRLF
+*.ps1  text eol=crlf
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# Текст
+*.md   text eol=lf
+*.json text eol=lf
+.gitattributes text eol=lf
+.gitignore     text eol=lf

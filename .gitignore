@@ -1,0 +1,12 @@
+# Резервные копии конфигурации на машине
+opencode.backup-*/
+
+# Мусор Windows
+Thumbs.db
+desktop.ini
+
+# Секреты — на всякий случай, если кто-то положит рядом
+service.json
+auth.json
+*.key
+.env
