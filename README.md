@@ -52,15 +52,11 @@ bash install.sh --api-key "sk-..."
 ### macOS / Linux
 
 ```bash
-# 1. Один раз: вход в GitHub (репозиторий приватный)
-brew install gh          # если gh ещё нет
-gh auth login
-
-# 2. Скачать конфигурацию
-gh repo clone permyakov344-png/opencode-setup ~/opencode-setup
+# 1. Скачать конфигурацию
+git clone https://github.com/permyakov344-png/opencode-setup.git ~/opencode-setup
 cd ~/opencode-setup
 
-# 3. Установить
+# 2. Установить
 bash install.sh
 ```
 
@@ -81,7 +77,7 @@ brew install anomalyco/tap/opencode-v2     # или: npm install -g @opencode/cl
 ### Windows
 
 ```powershell
-gh repo clone permyakov344-png/opencode-setup $env:USERPROFILE\opencode-setup
+git clone https://github.com/permyakov344-png/opencode-setup.git $env:USERPROFILE\opencode-setup
 cd $env:USERPROFILE\opencode-setup
 powershell -ExecutionPolicy Bypass -File install.ps1
 powershell -ExecutionPolicy Bypass -File verify.ps1
@@ -234,7 +230,6 @@ OpenCode, а не RouterAI. Платные модели `routerai/*` работ�
 | OpenCode | `brew install anomalyco/tap/opencode-v2` или `npm install -g @opencode/cli` | `npm install -g @opencode/cli` |
 | Оболочка | bash 3.2+ (штатная) | PowerShell 5.1+ (штатный) |
 | Git | `xcode-select --install` | [git-scm.com](https://git-scm.com) |
-| GitHub CLI | `brew install gh` | `winget install GitHub.cli` |
 
 Ключ RouterAI нужен для любой модели `routerai/*`. Без него OpenCode работает,
 но только на бесплатных моделях OpenCode.
