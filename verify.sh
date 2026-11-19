@@ -51,7 +51,8 @@ fi
 printf '\n'
 head_ 'Файлы конфигурации:'
 for f in opencode.json AGENTS.md agents/reviewer.md agents/tester.md agents/docs.md \
-         commands/review.md commands/test.md commands/docs.md commands/sync.md; do
+         commands/review.md commands/test.md commands/docs.md commands/sync.md \
+         commands/pro.md commands/flash.md; do
   if [ -f "$CFG/$f" ]; then ok "$f"; else bad "$f"; fi
 done
 
@@ -100,7 +101,7 @@ printf '\n'
 head_ 'Итог:'
 printf '  ок: %s   предупреждений: %s   проблем: %s\n' "$OK" "$WARN" "$BAD"
 if [ "$BAD" -eq 0 ]; then
-  printf '  %sКонфигурация на месте.%s Откройте opencode, наберите / — должны быть review, test, docs, sync.\n' "$C_OK" "$C_OFF"
+  printf '  %sКонфигурация на месте.%s Откройте opencode, наберите / — должны быть review, test, docs, sync, pro, flash.\n' "$C_OK" "$C_OFF"
 else
   printf '  %sЕсть проблемы%s — смотрите строки [нет] выше. Обычно помогает повторить install.sh.\n' "$C_WARN" "$C_OFF"
 fi

@@ -1,7 +1,6 @@
 ---
 description: Пишет и правит тесты, не трогает прод-код
 mode: subagent
-model: opencode/deepseek-v4.1-flash-free
 permissions:
   - action: shell
     resource: "*"

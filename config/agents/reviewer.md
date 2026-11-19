@@ -1,7 +1,6 @@
 ---
 description: Ревьюит текущие изменения, ничего не меняет
 mode: subagent
-model: opencode/deepseek-v4.1-flash-free
 permissions:
   - action: edit
     resource: "*"

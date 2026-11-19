@@ -145,7 +145,7 @@ if [ -z "$API_KEY" ] && [ -f "$DST/opencode.json" ]; then
 fi
 
 if [ -z "$API_KEY" ] && [ "$SKIP_KEY" -eq 0 ]; then
-  warn 'ключ RouterAI нужен для модели по умолчанию routerai/deepseek-v4-pro-0813'
+  warn 'ключ RouterAI нужен для модели по умолчанию routerai/deepseek-v4.1-flash-1017'
   printf '       Вставьте ключ и нажмите Enter (ввод не отображается).\n'
   printf '       Пустой Enter — пропустить (модель по умолчанию не заработает).\n'
   printf '       Ключ: '
@@ -187,5 +187,5 @@ printf '\nУстановлено:\n'
 printf '\nЧто дальше:\n'
 printf '  1. Откройте новый терминал (или перезапустите opencode).\n'
 printf '  2. Проверка:  bash %s/verify.sh\n' "$REPO_DIR"
-printf '  3. В opencode наберите / — должны быть review, test, docs, sync.\n'
+printf '  3. В opencode наберите / — должны быть review, test, docs, sync, pro, flash.\n'
 printf '\nСекреты (service.json, ключи) не копируются и не перезаписываются.\n\n'

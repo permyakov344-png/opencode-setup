@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "routerai/deepseek-v4-pro-0813",
+  "model": "routerai/deepseek-v4.1-flash-1017",
   "mcp": {
     "svgnew": {
       "type": "remote",
@@ -21,6 +21,25 @@
           "id": "deepseek/deepseek-v4-pro-0813",
           "name": "DeepSeek V4 Pro 0813",
           "tool_call": true,
+          "limit": {
+            "context": 128000,
+            "output": 8192
+          }
+        },
+        "deepseek-v4.1-flash-1017": {
+          "id": "deepseek/deepseek-v4.1-flash-1017",
+          "name": "DeepSeek V4.1 Flash 1017 (дешёвая)",
+          "tool_call": true,
+          "limit": {
+            "context": 128000,
+            "output": 8192
+          }
+        },
+        "deepseek-v4-flash-vision-exp": {
+          "id": "deepseek/deepseek-v4-flash-vision-exp",
+          "name": "DeepSeek V4 Flash Vision (видит картинки)",
+          "tool_call": true,
+          "attachment": true,
           "limit": {
             "context": 128000,
             "output": 8192

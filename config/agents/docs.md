@@ -1,7 +1,6 @@
 ---
 description: Пишет и обновляет README, docs и CHANGELOG, не трогает код
 mode: subagent
-model: opencode/deepseek-v4.1-flash-free
 permissions:
   - action: edit
     resource: "*"

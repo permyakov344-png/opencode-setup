@@ -95,7 +95,7 @@ if (-not $ApiKey -and $existingKey) {
 }
 
 if (-not $ApiKey -and -not $SkipKey) {
-  Write-Host '[4/5] Ключ RouterAI нужен для модели по умолчанию (routerai/deepseek-v4-pro-0813).' -ForegroundColor Yellow
+  Write-Host '[4/5] Ключ RouterAI нужен для модели по умолчанию (routerai/deepseek-v4.1-flash-1017).' -ForegroundColor Yellow
   Write-Host '      Вставьте ключ и нажмите Enter. Пустой Enter — пропустить (модель по умолчанию работать не будет).'
   $sec = Read-Host '      Ключ RouterAI' -AsSecureString
   if ($sec -and $sec.Length -gt 0) {
@@ -129,7 +129,7 @@ Write-Host ''
 Write-Host 'Что дальше:' -ForegroundColor Cyan
 Write-Host '  1. Откройте терминал заново (или перезапустите OpenCode).'
 Write-Host '  2. Проверка:  powershell -ExecutionPolicy Bypass -File verify.ps1'
-Write-Host '  3. В OpenCode наберите /  и убедитесь, что есть review, test, docs, sync.'
+Write-Host '  3. В OpenCode наберите /  и убедитесь, что есть review, test, docs, sync, pro, flash.'
 Write-Host ''
 Write-Host 'Секреты (service.json, ключи) в репозиторий не входят и не перезаписываются.' -ForegroundColor DarkGray
 Write-Host ''

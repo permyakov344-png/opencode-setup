@@ -41,7 +41,7 @@ foreach ($f in @('opencode.json', 'AGENTS.md')) {
 foreach ($f in @('reviewer.md', 'tester.md', 'docs.md')) {
   if (Test-Path -LiteralPath (Join-Path $cfg "agents\$f")) { Good "agents\$f" } else { Bad "agents\$f" }
 }
-foreach ($f in @('review.md', 'test.md', 'docs.md', 'sync.md')) {
+foreach ($f in @('review.md', 'test.md', 'docs.md', 'sync.md', 'pro.md', 'flash.md')) {
   if (Test-Path -LiteralPath (Join-Path $cfg "commands\$f")) { Good "commands\$f" } else { Bad "commands\$f" }
 }
 
@@ -84,7 +84,7 @@ Write-Host ''
 Write-Host 'Итог:' -ForegroundColor Cyan
 Write-Host "  ок: $ok   предупреждений: $warn   проблем: $bad"
 if ($bad -eq 0) {
-  Write-Host '  Конфигурация на месте. Откройте OpenCode, наберите / — должны быть review, test, docs, sync.' -ForegroundColor Green
+  Write-Host '  Конфигурация на месте. Откройте OpenCode, наберите / — должны быть review, test, docs, sync, pro, flash.' -ForegroundColor Green
 } else {
   Write-Host '  Есть проблемы — смотрите строки [нет] выше. Обычно помогает перезапустить install.ps1.' -ForegroundColor Yellow
 }
